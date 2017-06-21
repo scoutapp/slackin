@@ -13,7 +13,7 @@ var _fs = require('fs');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var logo = (0, _fs.readFileSync)(__dirname + '/assets/scout_slack.png').toString('base64');
+var logo = (0, _fs.readFileSync)(__dirname + '/assets/slack.svg').toString('base64');
 var js = (0, _fs.readFileSync)(__dirname + '/assets/iframe.js').toString();
 var css = (0, _fs.readFileSync)(__dirname + '/assets/iframe-button.css').toString();
 

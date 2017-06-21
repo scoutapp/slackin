@@ -24,9 +24,9 @@ function splash(_ref) {
       iframe = _ref.iframe,
       gcaptcha_sitekey = _ref.gcaptcha_sitekey;
 
-  var div = (0, _vd2.default)('.splash', !iframe && (0, _vd2.default)('.logos', logo && (0, _vd2.default)('.logo.org'), (0, _vd2.default)('.logo.slack')), (0, _vd2.default)('p', 'Join ', (0, _vd2.default)('b', name),
+  var div = (0, _vd2.default)('.splash', !iframe && (0, _vd2.default)('.logos', logo && (0, _vd2.default)('.logo.org'), (0, _vd2.default)('.logo.slack')), (0, _vd2.default)('p', 'Join the ', (0, _vd2.default)('b', name),
   // mention single single-channel inline
-  channels && channels.length === 1 && (0, _vd2.default)('span', ' #', channels[0]), ', our Ruby/Rails & Elixir Performance Community, on Slack.'), (0, _vd2.default)('p.status', active ? [(0, _vd2.default)('b.active', active), ' users online now of ', (0, _vd2.default)('b.total', total), ' registered.'] : [(0, _vd2.default)('b.total', total), ' users are registered so far.']), (0, _vd2.default)('form id=invite', channels && (channels.length > 1
+  channels && channels.length === 1 && (0, _vd2.default)('span', ' #', channels[0]), ', a place to get (and give) help on Ruby/Rails + Elixir performance issues.'), (0, _vd2.default)('p.status', active ? [(0, _vd2.default)('b.active', active), ' users online now of ', (0, _vd2.default)('b.total', total), ' registered.'] : [(0, _vd2.default)('b.total', total), ' users are registered so far.']), (0, _vd2.default)('form id=invite', channels && (channels.length > 1
   // channel selection when there are multiple
   ? (0, _vd2.default)('select.form-item name=channel', channels.map(function (channel) {
     return (0, _vd2.default)('option', { value: channel, text: channel });
@@ -88,14 +88,14 @@ function style() {
 
   if (!iframe) {
     css.add('.logo', {
-      'width': '174px',
-      'height': '69px',
+      'width': '4.8rem',
+      'height': '4.8rem',
       'display': 'inline-block',
       'background-size': 'cover'
     });
 
     css.add('.logo.slack', {
-      'background-image': 'url(assets/scout_slack.png)'
+      'background-image': 'url(assets/slack.svg)'
     });
 
     if (logo) {
@@ -179,7 +179,9 @@ function style() {
 
   css.add('p', {
     'font-size': iframe ? '1.2rem' : '1.5rem',
-    'margin': iframe ? '0 0 .5rem' : '.5rem 0'
+    'margin': iframe ? '0 0 .5rem' : '2rem 0',
+    'width': '700px',
+    'margin-left': '-200px'
   });
 
   if (iframe) {

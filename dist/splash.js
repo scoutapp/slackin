@@ -26,7 +26,7 @@ function splash(_ref) {
 
   var div = (0, _vd2.default)('.splash', !iframe && (0, _vd2.default)('.logos', logo && (0, _vd2.default)('.logo.org'), (0, _vd2.default)('.logo.slack')), (0, _vd2.default)('p', 'Join ', (0, _vd2.default)('b', name),
   // mention single single-channel inline
-  channels && channels.length === 1 && (0, _vd2.default)('span', ' #', channels[0]), ' - our Ruby/Rails & Elixir Performance Community - on Slack.'), (0, _vd2.default)('p.status', active ? [(0, _vd2.default)('b.active', active), ' users online now of ', (0, _vd2.default)('b.total', total), ' registered.'] : [(0, _vd2.default)('b.total', total), ' users are registered so far.']), (0, _vd2.default)('form id=invite', channels && (channels.length > 1
+  channels && channels.length === 1 && (0, _vd2.default)('span', ' #', channels[0]), ', our Ruby/Rails & Elixir Performance Community, on Slack.'), (0, _vd2.default)('p.status', active ? [(0, _vd2.default)('b.active', active), ' users online now of ', (0, _vd2.default)('b.total', total), ' registered.'] : [(0, _vd2.default)('b.total', total), ' users are registered so far.']), (0, _vd2.default)('form id=invite', channels && (channels.length > 1
   // channel selection when there are multiple
   ? (0, _vd2.default)('select.form-item name=channel', channels.map(function (channel) {
     return (0, _vd2.default)('option', { value: channel, text: channel });

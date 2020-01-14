@@ -1,3 +1,11 @@
+# Deployment
+
+This is deployed on Heroku, with the domain `slack.scoutapm.com`
+
+
+# Upstream README
+
+
 ![](https://github.com/zeit/art/blob/e081cf46e6609b51ac485dcc337ac6644c0da5e7/slackin/repo-banner.png)
 
 ## Features

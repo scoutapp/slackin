@@ -1,7 +1,12 @@
 # Deployment
 
-This is deployed on Heroku, with the domain `slack.scoutapm.com`
+This is deployed on Heroku, with the domain `slack.scoutapm.com`. It is owned by the Scout team, named `make-it-faster-slack`, with an internal heroku name of `sinuous-magnolia`
 
+To deploy a change:
+
+* Clone this repo, make your change
+* Be a member of Scout heroku account, logged in as your work account. ("chris@scoutapp.com" is my user, which is a member of "Scout team")
+* git push to the heroku endpoint.
 
 # Upstream README
 
